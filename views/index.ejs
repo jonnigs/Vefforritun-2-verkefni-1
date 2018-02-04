@@ -1,0 +1,17 @@
+<% include header %>
+
+<div class="greinabox">
+  <% for( let i = 0; i < 4; i += 1) { %>
+    <a href=<%= efni[i].slug %> >
+      <% if (efni[i].image){ %>
+        <img src=<%= efni[i].image %>>
+      <% } else { %>
+        <div class='enginMynd'></div>
+      <% } %>
+      <h3><%= efni[i].articletitle %></h3>
+      <p><%= efni[i].date %></p>
+    <% } %>
+  </a>
+</div>
+
+<% include footer %>

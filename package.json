@@ -1,0 +1,27 @@
+{
+  "name": "v1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint *.js **/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "front-matter": "^2.3.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-markdown": "^2.0.1",
+    "lint": "^1.1.2",
+    "markdown-it": "^8.4.0",
+    "orderby-time": "^0.1.0",
+    "path": "^0.12.7",
+    "time-formater": "^1.0.1"
+  }
+}

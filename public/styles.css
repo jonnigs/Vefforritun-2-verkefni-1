@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  background-color: #eee;
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* CSS sem við kemur header, miðjusetning yfir mynd...*/
+header {
+  width: 100%;
+  height: 30em;
+  margin-bottom: 2em;
+  background: transparent url(header.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  display: flex;
+}
+
+.header {
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 6em;
+  color: #eee;
+}
+
+/* Útlit á greinaboxum á forsíðu, ásamt skölun á þeim*/
+.greinabox {
+  display: flex;
+  width: 100%;
+  padding: 2em;
+  margin: auto;
+  margin-bottom: 2em;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .greinabox {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+}
+
+
+hr {
+  display: none;
+}
+/* .grein er það sem er að gerast á articles.ejs*/
+.grein {
+  padding: 0 2em 2em 2em;
+}
+.grein > h2:first-of-type {
+  display: none;
+}
+.grein > h1 {
+  color: #333;
+  font-size: 3em;
+}
+ .grein > p {
+   padding: 1em 0;
+ }
+.grein > h2 {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin: 2em 0 1em 0;
+}
+
+a > img {
+  width: 100%;
+  height: 20rem;
+  margin: auto;
+  margin: 2em 0 1em 0;
+}
+
+.enginMynd {
+  width: 100%;
+  height: 20rem;
+  margin: 2em 0 1em 0;
+  background-color: #666;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  a {
+    width: 50%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+a > h3 {
+  color: #333;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: #333;
+  text-decoration: none;
+}
+
+blockquote {
+  font-style: italic;
+}
+.villubox {
+  display: flex;
+  flex-flow: column;
+}
+.villuskilabod {
+  color: #333;
+  margin: 0 auto;
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  font-size: 3em;
+}
+
+.villubox > .tilbaka {
+  margin: 0 auto;
+  text-align:center;
+  display:block;
+}
+
+.tilbaka {
+  padding: 2em;
+  font-weight: bold;
+}
